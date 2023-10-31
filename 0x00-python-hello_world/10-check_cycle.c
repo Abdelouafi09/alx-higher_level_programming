@@ -6,10 +6,20 @@
  */
 int check_cycle(listint_t *list)
 {
-	listint_t *curr, *next;
+	listint_t *curr, *nxt;
 
 	if (list == NULL || list->next == NULL)
 		return (0);
-	curr = list->next;
 
+	curr = list;
+	nxt = list->next;
+	while (curr && nxt && nxt->next)
+	{
+		if (curr == nxt)
+			return (1);
+
+		curr = curr->next;
+		nxt = nxt->next->next;
+	}
+	return (0);
 }
