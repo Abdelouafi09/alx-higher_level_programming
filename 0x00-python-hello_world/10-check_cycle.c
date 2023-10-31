@@ -6,5 +6,10 @@
  */
 int check_cycle(listint_t *list)
 {
+	listint_t *curr, *next;
+
+	if (list == NULL || list->next == NULL)
+		return (0);
+	curr = list->next;
 
 }
