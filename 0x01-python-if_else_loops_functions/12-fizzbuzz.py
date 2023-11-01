@@ -9,7 +9,4 @@ def fizzbuzz():
             r = "Buzz"
         else:
             r = i
-        if i < 100:
-            print("{} ".format(r), end="")
-        else:
-            print("{} ".format(r))
+        print("{} ".format(r), end="")
