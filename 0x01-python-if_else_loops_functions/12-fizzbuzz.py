@@ -13,5 +13,3 @@ def fizzbuzz():
             print("{} ".format(r), end="")
         else:
             print("{} ".format(r))
-
-fizzbuzz()
